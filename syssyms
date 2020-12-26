@@ -1,0 +1,39 @@
+ 
+     10C BufPtr                4/proc238   
+     114 HeapEnd               1/proc30    
+     118 TheZone               1/proc31    
+     12F CPUFlag               1/proc66     4/proc231   
+     130 ApplLimit             1/proc30     4/proc238   
+     134 SonyVars              1/proc15    
+     144 SysEvtMask            3/proc177    3/com_37    
+     1D4 VIA                   1/proc6      3/proc155    3/proc162    3/proc163   
+                               4/proc230   
+     1FB SpConfig              1/proc66    
+     20C Time                  1/GetDateTime   1/GetTime   
+     210 BootDrive             1/proc66    
+     21E KybdType              1/proc66    
+     220 MemErr                1/proc11     1/com_3      1/proc31    26/proc412   
+     260 SdVolume              1/proc13     1/proc63     1/GetSoundVol  
+     266 SoundBase             1/proc13     4/proc230   
+     28E Rom85                 1/proc15     1/proc30     1/proc31     1/proc63    
+                               1/proc66    
+     291 PortbUse              1/proc66    
+     2AA ApplZone              1/proc30     1/proc31     4/proc238   
+     2AE RomBase               1/Restart    1/proc66    
+     2DC ABusDCE               1/proc66    
+     316 MPWVars               1/_RTInit   
+     31A Lo3Bytes              1/proc31     1/proc32    
+     3F6 FsFcbLen              1/proc66    
+     904 CurrentA5             3/proc154    3/proc155    3/proc156    3/proc157   
+                               5/proc271   
+     910 CurApName             1/_RTInit   
+     9FA scratch8              3/proc213    3/proc217   
+     A58 SysMap                1/proc66    
+     A6C DeskHook              3/proc220    3/proc221   
+     A78 ApplScratch           1/proc1      1/proc3      1/proc4      1/proc8     
+                               1/proc9      1/proc10     1/proc13     3/proc160   
+                               4/proc231   
+     AFA DlgFont               1/proc65    
+     B22 HWCfgFlags            1/proc66    
+  EFFFFE ViaBufA               1/proc63    
+  FCC000 PhaseRead             1/proc63    

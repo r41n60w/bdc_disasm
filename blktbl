@@ -1,0 +1,924 @@
+ Blks, glob data  com proc lbls #inst
+  920   275  467   40  415     17412
+ 
+name                seg    fba   blen
+proc1                 1      0     30
+proc2                 1     1E     14
+proc3                 1     2C     24
+proc4                 1     44     14
+proc5                 1     52     74
+proc6                 1     9C     16
+proc7                 1     AC      6
+proc8                 1     B2     12
+proc9                 1     BE     60
+proc10                1     FA     42
+proc11                1    124    720
+               data1  1    3F4     -4
+               data2  1    3F8     -2
+               data3  1    3FA     -6
+               data4  1    400     -4
+proc12                1    404    158
+proc13                1    4A2    174
+proc14                1    550     30
+               data5  1    56E    -20
+               data6  1    582    -34
+               data7  1    5A4    -26
+proc15                1    5BE     40
+__CplusInit           1    5E6    170
+               data8  1    690    -14
+dtors__Fv             1    69E    122
+               data9  1    718    -12
+_RTInit               1    724    520
+              data10  1    92C    -10
+exit                  1    936     24
+              data11  1    94E     -8
+_RTExit               1    956     90
+              data12  1    9B0    -10
+              data13  1    9BA     -8
+proc21                1    9C2      8
+              data14  1    9CA     -8
+proc22                1    9D2     38
+              data15  1    9F8     -8
+proc23                1    A00     80
+proc24                1    A50     12
+proc25                1    A5C     18
+proc26                1    A6E     50
+p2cstr                1    AA0     30
+              data16  1    ABE    -10
+com_1                 1    AC8      4
+com_2                 1    ACA      0
+com_3                 1    ACC      6
+com_4                 1    AD2      4
+FreeMem               1    AD6     10
+ResrvMem              1    AE0     10
+proc30                1    AEA     52
+com_5                 1    B1E      8
+proc31                1    B26    404
+proc32                1    CBA     58
+proc33                1    CF4     62
+proc34                1    D32     10
+NewPtr                1    D3C     12
+DisposPtr             1    D48     10
+NewHandle             1    D52     12
+DisposHandle          1    D5E     10
+proc39                1    D68     20
+SetHandleSize         1    D7C     12
+RecoverHandle         1    D88     12
+EmptyHandle           1    D94     10
+ReAllocHandle         1    D9E     12
+HLock                 1    DAA     10
+HUnLock               1    DB4     10
+HPurge                1    DBE     10
+HNoPurge              1    DC8     10
+MoreMasters           1    DD2      6
+BlockMove             1    DD8     16
+proc50                1    DE8     10
+proc51                1    DF2     10
+DiskEject             1    DFC     40
+GetDateTime           1    E24     10
+GetTime               1    E2E     16
+Delay                 1    E3E     14
+proc56                1    E4C     70
+Restart               1    E92     10
+PBGetVInfo            1    E9C     18
+PBUnMountVol          1    EAE     10
+PBEject               1    EB8     10
+proc61                1    EC2     70
+Eject                 1    F08     34
+proc63                1    F2A    124
+GetSoundVol           1    FA6     12
+proc65                1    FB2      8
+proc66                1    FBA    362
+              data17  1    FEE     -5
+              data18  1    FF3     -1
+proc67                1   1124      2
+proc68                1   1126     54
+%INITHEAP             1   115C     78
+proc70                1   1162      0
+proc71                1   1168      0
+              data19  1   11AA    -12
+proc72                1   11B6     52
+%I_DIV4               1   11EA     38
+%I_MOD4               1   1210     38
+proc75                1   1236    104
+proc76                1   129E     90
+proc77                1   12F8     54
+proc78                1   132E     56
+              data20  1   1336     -6
+proc79                1   1366     92
+              data21  1   1378    -14
+proc80                1   13C2     30
+proc81                1   13E0     96
+proc82                1   1440    158
+proc83                1   14DE     42
+proc84                1   1508     54
+proc85                1   153E    294
+proc86                1   1664     60
+proc87                1   16A0     46
+proc88                1   16CE     14
+proc89                1   16DC    186
+proc90                1   1796     38
+              data22  1   17BC     -4
+proc91                1   17C0    114
+proc92                1   1832     80
+              data23  1   1882     -2
+proc93                1   1884     50
+proc94                1   18B6     56
+proc95                1   18EE    164
+              data24  1   1992     -2
+proc96                1   1994     48
+proc97                1   19C4     68
+proc98                1   1A08    362
+              data25  1   1B72     -2
+              data26  1   1B74     -2
+proc99                1   1B76    114
+              data27  1   1BE8    -14
+              data28  1   1BF6     -2
+proc100               1   1BF8    190
+              data29  1   1CB6    -14
+              data30  1   1CC4     -2
+              data31  1   1CC6     -2
+              data32  1   1CC8     -6
+proc101               1   1CCE     56
+proc102               1   1D06     56
+proc103               1   1D3E    792
+        <jmpt>data33  1   1DC6    -20
+        <jmpt>data34  1   1EB4    -20
+              data35  1   2056     -2
+              data36  1   2058     -6
+              data37  1   205E     -6
+              data38  1   2064     -4
+              data39  1   2068     -4
+              data40  1   206C     -6
+              data41  1   2072     -4
+              data42  1   2076     -4
+proc104               1   207A     44
+proc105               1   20A6    362
+              data43  1   2210     -4
+              data44  1   2214     -4
+              data45  1   2218     -6
+              data46  1   221E     -2
+              data47  1   2220     -6
+proc106               1   2226    204
+              data48  1   22F2     -6
+              data49  1   22F8     -2
+              data50  1   22FA     -6
+              data51  1   2300     -4
+proc107               1   2304    204
+              data52  1   23D0     -6
+              data53  1   23D6     -2
+              data54  1   23D8     -6
+              data55  1   23DE     -4
+proc108               1   23E2    236
+              data56  1   24CE     -6
+              data57  1   24D4     -6
+              data58  1   24DA     -4
+proc109               1   24DE    156
+              data59  1   257A     -2
+              data60  1   257C     -6
+              data61  1   2582     -4
+proc110               1   2586     44
+proc111               1   25B2     44
+proc112               1   25DE     64
+              data62  1   261E     -4
+proc113               1   2622    176
+              data63  1   26D2    -12
+proc114               1   26DE    738
+              data64  1   29C0     -2
+code                  1   29C2    124
+              data65  1   2A3E     -4
+proc116               2      0    184
+              data66  2     B8     -2
+proc117               2     BA      6
+              data67  2     C0     -6
+proc118               2     C6      6
+proc119               2     CC      6
+              data68  2     D2    -35
+              data69  2     F5   -250
+              data70  2    1EF    -20
+              data71  2    203    -20
+              data72  2    217    -20
+              data73  2    22B    -61
+com_6                 2    268     66
+              data74  2    2AA   -176
+              data75  2    35A    -12
+              data76  2    366    -12
+              data77  2    372    -12
+              data78  2    37E   -100
+proc120               2    3E2    282
+proc121               2    4FC     36
+proc122               2    520      8
+              data79  2    528     -2
+              data80  2    52A    -46
+proc123               2    558      6
+              data81  2    55E    -28
+              data82  2    57A    -20
+              data83  2    58E     -8
+              data84  2    596    -16
+              data85  2    5A6     -8
+              data86  2    5AE    -16
+              data87  2    5BE    -20
+              data88  2    5D2    -20
+              data89  2    5E6    -16
+proc124               2    5F6   1030
+        <jmpt>data90  2    7BE   -288
+proc125               2    9FC     20
+              data91  2    A10     -4
+              data92  2    A14  -1040
+proc126               2    E24     28
+proc127               2    E40     98
+proc128               2    EA2     98
+              data93  2    F04    -22
+com_7                 2    F1A      8
+com_8                 2    F22     40
+proc129               2    F4A     10
+              data94  2    F54    -86
+              data95  2    FAA    -16
+              data96  2    FBA   -248
+proc130               2   10B2     32
+              data97  2   10D2   -138
+com_9                 2   115C      2
+com_10                2   115E    286
+              data98  2   1200     -2
+proc131               2   127C     34
+              data99  2   129E    -58
+proc132               2   12D8    132
+com_11                2   135C    140
+com_12                2   13E8     18
+com_13                2   13FA     32
+com_14                2   141A    206
+com_15                2   14E8      4
+com_16                2   14EC    294
+com_17                2   1612    180
+com_18                2   16C6     60
+com_19                2   1702     56
+com_20                2   173A    146
+com_21                2   17CC    112
+com_22                2   183C      4
+com_23                2   1840     30
+com_24                2   185E    140
+com_25                2   18EA    164
+proc133               2   198E    576
+             data100  2   1BCE     -2
+             data101  2   1BD0    -64
+proc135               2   1C10      6
+             data102  2   1C16    -80
+             data103  2   1C66    -72
+proc136               2   1CAE    404
+proc137               2   1CC0      0
+com_26                2   1CF4     24
+com_27                2   1D42      0
+com_28                2   1E42    168
+com_29                2   1EBC      0
+com_30                2   1EEA     58
+com_31                2   1F24      2
+proc138               2   1F26    114
+com_32                2   1F50     70
+             data104  2   1F98    -30
+             data105  2   1FB6     -8
+             data106  2   1FBE   -272
+proc139               2   20CE    102
+             data107  2   2134   -674
+proc140               2   23D6     30
+com_33                2   23F4     22
+proc141               2   240A    134
+             data108  2   2490   -114
+com_34                2   2502    154
+com_35                2   259C    232
+             data109  2   2684     -6
+             data110  2   268A   -216
+com_36                2   2762      2
+             data111  2   2764  -1762
+proc142               2   2E46     24
+       <jmpt>data112  2   2E5E    -72
+             data113  2   2EA6   -218
+             data114  2   2F80   -858
+proc143               2   32DA    216
+       <jmpt>data115  2   3374    -12
+proc144               2   33B2    118
+             data116  2   3428   -138
+proc145               2   34B2    472
+       <jmpt>data117  2   34CA    -16
+             data118  2   368A    -18
+             data119  2   369C    -16
+proc146               3      0    568
+proc147               3    238    160
+proc148               3    2D8    148
+proc149               3    36C    186
+proc150               3    426    198
+proc151               3    4EC    178
+             data120  3    59E   -164
+proc152               3    642     86
+proc153               3    698     88
+proc154               3    6F0     62
+proc155               3    72E    104
+proc156               3    796     56
+proc157               3    7CE     88
+proc158               3    826    122
+proc159               3    8A0     24
+             data121  3    8B8    -40
+proc160               3    8E0     32
+proc161               3    900     12
+proc162               3    90C     20
+proc163               3    920     20
+proc164               3    934     52
+             data122  3    968  -1384
+proc165               3    ED0     88
+             data123  3    F28     -4
+             data124  3    F2C   -126
+             data125  3    FAA  -1128
+             data126  3   1412    -86
+proc166               3   1468     32
+proc167               3   1488     74
+             data127  3   14D2    -38
+             data128  3   14F8  -1004
+             data129  3   18E4    -88
+             data130  3   193C    -92
+proc168               3   1998     46
+proc169               3   19C6     82
+proc170               3   1A18     48
+             data131  3   1A48   -608
+             data132  3   1CA8   -212
+proc171               3   1D7C     48
+             data133  3   1DAC   -312
+proc172               3   1EE4     84
+             data134  3   1F38  -1368
+proc173               3   2490     68
+             data135  3   24D4   -308
+proc174               3   2608    124
+proc175               3   2684     52
+             data136  3   26B8    -42
+             data137  3   26E2   -732
+proc176               3   29BE    140
+proc177               3   2A4A     98
+             data138  3   2AAC     -6
+             data139  3   2AB2   -118
+proc178               3   2B28     18
+com_37                3   2B2E     10
+proc179               3   2B3A    170
+             data140  3   2BE4    -10
+             data141  3   2BEE    -10
+             data142  3   2BF8    -10
+             data143  3   2C02    -10
+             data144  3   2C0C    -10
+proc180               3   2C16     14
+proc181               3   2C24     22
+             data145  3   2C3A    -14
+proc182               3   2C48     44
+             data146  3   2C74    -70
+proc183               3   2CBA     60
+proc184               3   2CF6    288
+       <jmpt>data147  3   2D04    -12
+             data148  3   2D10     -2
+proc185               3   2D12      0
+       <jmpt>data149  3   2D20    -12
+             data150  3   2D2C     -2
+proc186               3   2D2E      0
+proc187               3   2D54      0
+proc188               3   2D7A      0
+proc189               3   2DA0      0
+proc190               3   2DC6      0
+proc191               3   2DEE      0
+proc192               3   2E16     50
+proc193               3   2E48     28
+             data151  3   2E64    -66
+proc194               3   2EA6     58
+             data152  3   2EE0   -104
+proc195               3   2F48     32
+             data153  3   2F68   -134
+proc196               3   2FEE     58
+proc197               3   3028     60
+             data154  3   3064  -1284
+proc198               3   3568     78
+             data155  3   35B6   -268
+proc199               3   36C2     94
+             data156  3   3720   -352
+proc200               3   3880     36
+             data157  3   38A4   -118
+proc201               3   391A     50
+             data158  3   394C    -94
+proc202               3   39AA    104
+             data159  3   3A12   -254
+proc203               3   3B10    118
+             data160  3   3B86   -278
+proc204               3   3C9C    186
+proc205               3   3D56    148
+proc206               3   3DEA    116
+proc207               3   3E5E      6
+proc208               3   3E64     50
+             data161  3   3E96    -48
+proc209               3   3EC6    102
+proc210               3   3F2C     64
+proc211               3   3F6C     96
+proc212               3   3FCC     54
+             data162  3   4002   -118
+proc213               3   4078     36
+proc214               3   409C     22
+proc215               3   40B2     66
+proc216               3   40F4    102
+proc217               3   4116      0
+proc218               3   415A     14
+proc219               3   4168     48
+             data163  3   4198    -16
+proc220               3   41A8     10
+proc221               3   41B2      6
+             data164  3   41B8    -20
+proc222               3   41CC     30
+proc223               3   41EA     28
+proc224               3   4206     30
+proc225               3   4224     28
+proc226               3   4240     40
+             data165  3   4268   -212
+proc227               3   433C     44
+             data166  3   4368   -148
+proc228               4      0     64
+             data167  4     40    -42
+             data168  4     6A     -2
+proc229               4     6C     18
+proc230               4     7E     34
+proc231               4     A0     56
+proc232               4     D8     78
+             data169  4    126    -16
+proc233               4    136    212
+proc234               4    20A     14
+proc235               4    218     52
+proc236               4    24C     76
+             data170  4    298     -6
+             data171  4    29E     -4
+proc237               4    2A2     46
+proc238               4    2D0    238
+             data172  4    3BE     -2
+             data173  4    3C0     -6
+             data174  4    3C6     -6
+proc239               4    3CC     40
+proc240               4    3F4     52
+proc241               4    428    110
+       <jmpt>data175  4    45A    -14
+proc242               4    496     42
+proc243               4    4C0     92
+proc244               4    51C    648
+             data176  4    7A4     -6
+             data177  4    7AA     -6
+proc245               4    7B0     34
+proc246               4    7D2     86
+proc247               4    828    200
+             data178  4    8F0    -10
+             data179  4    8FA   -154
+proc248               5      0    412
+proc249               5    19C    118
+             data180  5    212     -6
+             data181  5    218     -4
+proc250               5    21C     20
+proc251               5    230    160
+             data182  5    2D0    -12
+proc252               5    2DC    376
+       <jmpt>data183  5    378    -16
+proc253               5    454    160
+             data184  5    4F4     -6
+proc254               5    4FA     66
+proc255               5    53C     82
+             data185  5    58E     -4
+proc256               5    592     38
+proc257               5    5B8    230
+proc258               5    69E    312
+             data186  5    7D6    -12
+proc259               5    7E2    148
+             data187  5    876     -6
+             data188  5    87C     -4
+             data189  5    880     -6
+proc260               5    886    112
+proc261               5    8F6    136
+proc262               5    97E    404
+       <jmpt>data190  5    9A6    -12
+proc263               5    B12     76
+proc264               5    B5E     90
+proc265               5    BB8    194
+proc266               5    C7A     80
+proc267               5    CCA    162
+proc268               5    D6C    214
+proc269               5    E42    150
+proc270               5    ED8    132
+proc271               5    F5C    108
+proc272               5    FC8    426
+             data191  5   1172     -6
+             data192  5   1178     -4
+             data193  5   117C     -4
+proc273               5   1180     64
+proc274               5   11C0     66
+proc275               5   1202     92
+proc276               5   125E    154
+             data194  5   12F8    -10
+             data195  5   1302     -2
+             data196  5   1304     -4
+proc277               5   1308     18
+proc278               5   131A     94
+proc279               5   1378     86
+proc280               5   13CE    164
+             data197  5   1472    -12
+proc281               5   147E    352
+             data198  5   15DE     -2
+proc282               5   15E0    104
+proc283               5   1648    130
+proc284               5   16CA    134
+proc285               5   1750    130
+proc286               5   17D2    104
+proc287               5   183A     88
+proc288               5   1892    758
+       <jmpt>data199  5   1A20    -14
+             data200  5   1B88     -4
+proc289               5   1B8C     52
+proc290               5   1BC0    252
+             data201  5   1CBC     -4
+proc291               5   1CC0     80
+proc292               5   1D10    118
+             data202  5   1D86     -6
+proc293               5   1D8C     70
+             data203  5   1DD2     -6
+proc294               5   1DD8    414
+proc295               5   1F76    164
+proc296               5   201A     42
+proc297               5   2044    404
+             data204  5   21D8     -2
+proc298               5   21DA    210
+proc299               5   22AC    790
+proc300               6      0     30
+             data205  6     1E    -78
+             data206  6     6C  -1876
+proc301               6    7C0      4
+proc302               6    7C4     76
+       <jmpt>data207  6    7CC     -8
+proc303               6    810     74
+             data208  6    85A     -2
+proc304               6    85C   1678
+       <jmpt>data209  6    866    -32
+proc305               6    90C      0
+             data210  6    914   -120
+             data212  6    C70    -25
+             data213  6    C89    -15
+       <jmpt>data214  6    CCA    -16
+             data216  6    D5A     -4
+             data217  6    D8A    -25
+             data218  6    DA3    -15
+             data219  6    EEA     -2
+proc306               6    EEC    152
+             data220  6    F84     -2
+proc307               6    F86     60
+             data221  6    FC2    -58
+proc308               7      0     74
+             data222  7     4A  -1564
+proc309               7    666    144
+             data223  7    6F6   -712
+proc310               7    9BE   2890
+       <jmpt>data224  7    9C6    -44
+             data225  7    A4C   -116
+             data226  7    AC0    -84
+             data227  7    B2E   -124
+             data228  7    BAA    -42
+             data229  7    C8A     -4
+             data230  7    CEA     -4
+             data231  7    E86    -36
+             data232  7    F0E     -1
+             data233  7    F0F     -1
+             data234  7    F10     -1
+             data235  7    F11    -61
+             data236  7   126A    -56
+             data237  7   12A2   -116
+proc311               7   1316      0
+             data238  7   14B6     -8
+             data239  7   14BE     -8
+proc312               7   1508      2
+proc313               7   150A     28
+             data240  7   1526    -84
+proc314               8      0    126
+             data241  8     7E   -936
+proc315               8    426    102
+             data242  8    48C     -2
+proc316               8    48E    240
+       <jmpt>data243  8    49E     -8
+             data244  8    520    -92
+proc317               8    57E     34
+proc318               8    5A0     60
+com_38                8    5DC     38
+proc319               8    602     72
+proc320               8    64A     88
+proc321               8    6A2     58
+proc322               8    6DC     72
+proc323               8    724     64
+             data245  8    764     -2
+proc324               8    766    176
+             data246  8    816     -2
+             data247  8    818     -4
+proc325               8    81C    156
+proc326               8    8B8     20
+             data248  8    8CC     -2
+proc327               8    8CE     86
+             data249  8    924   -350
+proc328               8    A82     32
+             data250  8    AA2   -732
+             data251  8    D7E    -54
+             data252  8    DB4    -72
+             data253  8    DFC   -324
+             data254  8    F40    -36
+             data255  8    F64   -216
+             data256  8   103C    -10
+proc329               8   1046     60
+             data257  8   1082    -10
+             data258  8   108C    -20
+             data259  8   10A0     -6
+             data260  8   10A6    -26
+proc330               8   10C0    682
+             data261  8   1140     -4
+             data262  8   1144     -4
+proc331               9      0    152
+             data263  9     98  -2116
+proc332               9    8DC     30
+             data264  9    8FA    -72
+proc333               9    942     62
+             data265  9    980  -1358
+proc334               9    ECE     34
+proc335               9    EF0    228
+       <jmpt>data266  9    EF8    -12
+             data267  9    FBE    -20
+proc336               9    FD4   1186
+             data268  9   1342    -50
+             data269  9   1374    -74
+             data270  9   13BE    -74
+             data271  9   1408    -20
+             data272  9   141C     -6
+             data273  9   1422    -20
+             data274  9   1436     -6
+             data275  9   143C    -18
+             data276  9   144E    -10
+             data277  9   1458    -18
+             data278  9   146A    -10
+proc337               A      0      8
+             data279  A      8   -434
+proc338               A    1BA     40
+             data280  A    1E2   -496
+             data281  A    3D2  -1206
+             data282  A    888    -22
+             data283  A    89E    -22
+             data284  A    8B4    -22
+             data285  A    8CA    -22
+proc339               A    8E0     32
+             data286  A    900    -22
+proc340               A    916     76
+             data287  A    962    -12
+             data288  A    96E    -12
+proc341               A    97A    558
+             data289  A    9A8     -8
+proc342               A    BA8     60
+             data290  A    BE4     -4
+proc343               A    BE8     66
+             data291  A    C2A     -4
+proc344               B      0    256
+-not ref-             B     1C      0
+             data292  B     9C     -2
+             data293  B    100    -88
+             data294  B    158    -80
+             data295  B    1A8     -8
+proc345               B    1B0    202
+       <jmpt>data296  B    1B8    -12
+             data297  B    27A     -2
+proc346               B    27C     48
+             data298  B    2AC   -238
+proc347               B    39A     24
+proc348               B    3B2     42
+             data299  B    3DC  -1288
+             data300  B    8E4    -26
+             data301  B    8FE    -22
+             data302  B    914    -60
+proc349               B    950     38
+             data303  B    976    -32
+proc350               B    996     50
+             data304  B    9C8     -4
+             data305  B    9CC     -6
+             data306  B    9D2    -50
+             data307  B    A04   -102
+             data308  B    A6A    -94
+proc351               B    AC8    686
+             data309  B    B24     -6
+             data310  B    B2A     -6
+proc352               C      0     48
+proc353               C     30    330
+             data311  C    17A     -2
+proc354               C    17C     60
+             data312  C    1B8   -220
+             data313  C    294   -712
+             data314  C    55C   -126
+             data315  C    5DA  -1152
+             data316  C    A5A    -26
+             data317  C    A74    -22
+             data318  C    A8A     -4
+             data319  C    A8E    -16
+             data320  C    A9E    -38
+             data321  C    AC4    -16
+             data322  C    AD4    -46
+             data323  C    B02    -18
+             data324  C    B14    -22
+             data325  C    B2A    -18
+             data326  C    B3C    -22
+             data327  C    B52    -44
+             data328  C    B7E    -44
+             data329  C    BAA    -44
+             data330  C    BD6    -44
+             data331  C    C02    -44
+             data332  C    C2E    -44
+proc355               C    C5A    448
+             data333  C    C82     -4
+             data334  C    D3E     -4
+proc356               D      0    740
+       <jmpt>data335  D      8    -24
+             data336  D    146     -5
+             data337  D    14B     -5
+             data338  D    1F8     -1
+             data339  D    1F9    -47
+             data340  D    2E4     -2
+proc357               D    2E6     72
+proc358               D    32E      2
+proc359               E      0    290
+       <jmpt>data341  E      8    -20
+             data342  E     8E    -18
+             data343  E     CA     -6
+proc360               E    122    100
+             data344  E    186   -886
+             data345  E    4FC    -36
+             data346  E    520   -790
+             data347  E    836  -1314
+             data348  E    D58    -30
+             data349  E    D76    -18
+             data350  E    D88    -22
+             data351  E    D9E    -18
+             data352  E    DB0    -22
+             data353  E    DC6    -58
+             data354  E    E00    -58
+             data355  E    E3A    -58
+             data356  E    E74    -34
+             data357  E    E96    -66
+             data358  E    ED8    -74
+proc361               E    F22    464
+             data359  E    F46     -4
+proc362               F      0    398
+       <jmpt>data360  F      8    -28
+             data361  F    18E     -2
+proc363               F    190    328
+       <jmpt>data362  F    198    -16
+             data363  F    2D8     -2
+proc364               F    2DA     70
+             data364  F    320   -776
+com_39                F    628     50
+             data365  F    65A   -158
+             data366  F    6F8   -282
+             data367  F    812   -108
+             data368  F    87E   -594
+             data369  F    AD0   -360
+             data370  F    C38   -180
+             data371  F    CEC    -30
+proc365               F    D0A     36
+             data372  F    D2E    -14
+proc366               F    D3C     38
+             data373  F    D62    -16
+proc367               F    D72     16
+proc368               F    D82     16
+proc369               F    D92     84
+             data374  F    DE6    -36
+             data375  F    E0A   -144
+             data376  F    E9A    -58
+             data377  F    ED4    -58
+             data378  F    F0E    -58
+proc370               F    F48    350
+             data379  F    F86     -4
+proc371              10      0    152
+       <jmpt>data380 10      8    -12
+             data381 10     74     -8
+proc372              10     98     48
+             data382 10     C8   -182
+proc373              10    17E     30
+             data383 10    19C   -778
+             data384 10    4A6   -752
+             data385 10    796   -576
+proc374              10    9D6     60
+             data386 10    A12    -22
+proc375              10    A28     28
+proc376              10    A44    100
+             data387 10    A6E    -12
+             data388 10    A7A    -12
+             data389 11      0   -902
+proc377              11    386    356
+       <jmpt>data390 11    3D4    -36
+proc378              11    4EA     90
+             data391 11    516     -2
+             data392 11    544     -4
+proc379              11    548     70
+com_40               11    580      0
+proc380              11    58E     80
+             data393 11    5DE     -4
+proc381              11    5E2    140
+             data394 11    66E     -4
+proc382              11    672     70
+             data395 11    6B8     -8
+proc383              12      0    142
+             data396 12     8E   -426
+             data397 12    238   -118
+             data398 12    2AE    -72
+             data399 12    2F6   -918
+             data400 12    68C    -26
+proc384              12    6A6     36
+             data401 12    6CA    -62
+proc385              12    708     58
+             data402 12    742    -10
+             data403 12    74C    -16
+             data404 12    75C    -50
+             data405 12    78E    -26
+             data406 12    7A8    -26
+proc386              12    7C2    342
+             data407 12    84E     -8
+proc387              13      0    952
+             data408 13     48   -734
+             data409 13    336   -128
+proc388              13    3B8    408
+proc389              13    550      2
+proc390              13    552    162
+proc391              13    5F4    180
+proc392              13    6A8    100
+proc393              13    70C    244
+proc394              14      0    410
+             data410 14     22     -8
+             data411 15      0   -904
+             data412 15    388   -594
+             data413 15    5DA    -34
+proc395              15    5FC     40
+             data414 15    624   -324
+             data415 15    768    -52
+             data416 15    79C    -52
+             data417 15    7D0    -52
+             data418 15    804    -72
+             data419 15    84C    -86
+             data420 15    8A2   -100
+             data421 15    906    -18
+             data422 15    918    -18
+             data423 15    92A    -18
+             data424 15    93C    -18
+proc396              15    94E    264
+             data425 15    978     -8
+proc397              16      0    404
+             data426 16     22     -8
+proc398              17      0    692
+             data427 17    104     -6
+             data428 17    244    -14
+             data429 17    252    -10
+             data430 17    25C    -10
+             data431 17    266    -10
+             data432 17    270    -20
+             data433 17    284    -22
+             data434 17    29A    -24
+proc399              18      0    692
+             data435 18    104     -6
+             data436 18    244    -14
+             data437 18    252    -10
+             data438 18    25C    -10
+             data439 18    266    -10
+             data440 18    270    -20
+             data441 18    284    -22
+             data442 18    29A    -24
+             data443 19      0  -1332
+             data444 19    534    -54
+             data445 19    56A   -522
+             data446 19    774    -34
+proc400              19    796     58
+             data447 19    7D0    -18
+proc401              19    7E2     36
+             data448 19    806   -162
+             data449 19    8A8    -10
+             data450 19    8B2    -10
+             data451 19    8BC    -10
+             data452 19    8C6    -20
+             data453 19    8DA     -6
+             data454 19    8E0    -20
+             data455 19    8F4     -6
+             data456 19    8FA    -20
+             data457 19    90E     -6
+proc402              19    914    400
+             data458 19    956     -4
+proc403              1A      0     54
+proc404              1A     36     26
+proc405              1A     50     64
+proc406              1A     90     54
+proc407              1A     C6    488
+             data459 1A    2AE     -6
+             data460 1A    2B4     -4
+proc408              1A    2B8    292
+proc409              1A    3DC     32
+proc410              1A    3FC    462
+proc411              1A    5CA    382
+       <jmpt>data461 1A    618     -8
+             data462 1A    748     -8
+             data463 1A    750     -6
+proc412              1A    756    770
+       <jmpt>data464 1A    882    -18
+             data465 1A    A58     -6
+proc413              1A    A5E     30
+proc414              1A    A7C    250
+             data466 1A    B76     -6
+             data467 1A    B7C     -4
+proc415              1A    B80     32
