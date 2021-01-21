@@ -10,12 +10,13 @@
 ;	    D1.w:    .Y (coord_t)
 
 proc129:
+	;#LANDJMP(D1, 10, 0, N/A)
 	move.w		d1, _V0(a6)
 	push		d0
-	move.w		#1,	d0
-	jsr	1/play_snd(a5)
+	move.w	 #SND_LAND,	d0
+	jsr	     1/play_snd(a5)
 	pop			d0
-	bra.s	lfv_4
+	bra.s	  .land2 ;2/land_jbox():
 
 
 ;{ 2/proc113    2/proc117   14/proc357 }
@@ -23,58 +24,70 @@ proc129:
 ;:1cc0			2/proc130()
 
 proc130:
+	;#LANDJMP(-200, 10, 0, N/A)
 	move.w	     #-200, _V0(a6)
 	move.w	  #LANDJMP, _ST(a6)
 	clr.w		    _V2(a6)
 	move.w	       #10, _V1(a6)
 ledge	cmp.w	lscr_edge(a5),	d0
 	bge.s	  .redge
+	;offscreen (left)
 	move.w	lscr_edge(a5),	d0
 	bra.s	  .fall2
+
 redge	cmp.w	rscr_edge(a5),	d0
 	ble.s	  .endfall
+	;    "	   (right)
 	move.w	rscr_edge(a5),	d0
 fall2	move.w		d0,  _X(a6)
 endfall	bra	  .endland
 	;[RTS]
 
 
-; { 2/proc126 }
+; { 2/proc127 }
+
 ;:1cf4			2/com_27()
-;Play SND_xxx, -> #LANDJMP (X,-31)
-;	args A6,A2,A0/A1: as landjmp
-com_27:
+;Land inside jumpbox -> #LANDJMP
+;  args A6,A2,D0/D1: as st_landjmp()
+land_jbox:
+	;#LANDJMP(D1-31, 10, 0, N/A)
 	move.w		d1, _V0(a6)
 	subi.w	       #31, _V0(a6)
 	push		d0
-	move.w		#1,	d0
+	move.w	 #SND_LAND,	d0
 	jsr	     1/play_snd(a5)
 	pop			d0
-
 	nop	
-lfv_4	move.w	  #LANDJMP, _ST(a6)
+
+land2	move.w	  #LANDJMP, _ST(a6)
 	clr.w		    _V2(a6)
 	move.w	       #10, _V1(a6)
-	cmp.w	lscr_edge(a5),	d0
-	bge.s	lfv_5
+loffscr	cmp.w	lscr_edge(a5),	d0
+	bge.s	  .roffscr
+	;offscreen (left)
 	move.w	lscr_edge(a5),	d0
 	addi.w	       #10,	d0
 	move.w		d0,  _X(a6)
 	bra.s	   2/st_landjmp(pc)
 
-lfv_5	cmp.w	rscr_edge(a5),	d0
+roffscr	cmp.w	rscr_edge(a5),	d0
 	ble.s	   2/st_landjmp(pc)
+	;    "     (right)
 	move.w	rscr_edge(a5),	d0
 	subi.w	       #10,	d0
 	move.w		d0,  _X(a6)
 	; .. st_landjmp()
 
-; { 2/proc113    2/proc126    2/com_27    2/data108 }
+
+; { 2/proc113, 2/proc126, 2/com_27 }
 
 ;:1d42				2/com_28()
 ;#LANDJMP state handler
 ;  args A6,A2/D4,D0/D1: as st_jmpoff()
-
+;	_V0(a6).w: 
+;	_V1(a6).w:
+;	_V2(a6).w:
+;	_V3(a6).l:
 st_landjmp:
 	;( ,+10)
 	add.w	    _V1(a6),	d1
@@ -90,6 +103,7 @@ rowdown	addq.w		#4,	d3
 
 ldrow2	bgt	com_31
 	move.w	_TLV(a2,d3.w),	d4
+
 	beq	  .rowdown
 	addi.w		  #18,	d4
 ldtile	cmp.w	 _RX(a2,d4.w),	d0
@@ -116,11 +130,12 @@ lfv_11	move.w	       d1,   _Y(a6)
 	add.w		d1,	d7
 	cmpi.w	       #80,	d7
 	bgt	  .lethal
+
 	tst.w		  _FACE(a6)
 	bgt.s	lfv_12
-	lea	2/data68,	a3 ;:0217
+	lea	2/lfall_ani,	a3
 	bra.s	lfv_13
-lfv_12	lea	2/data69,	a3 ;:022b
+lfv_12	lea	2/rfall_ani,	a3
 	subi.w	       #12,	d0
 lfv_13	move.w		d0,  _X(a6)
 	move.l		a3, _V0(a6)
@@ -134,14 +149,14 @@ lfv_14	cmpi.w		#2, _V2(a6)
 	add.w		d1,	d7
 	;lethal fall?
 	cmpi.w	       #80,	d7
-	bgt	com_30
+	bgt	  .lethal
 
 	;DIZZY
 	tst.w		  _FACE(a6)
 	bgt.s	lfv_15
-	lea	2/data68,	a3
+	lea	2/lfall_ani,	a3
 	bra.s	lfv_16
-lfv_15	lea	2/data69,	a3
+lfv_15	lea	2/rfall_ani,	a3
 	subi.w	     #12,	d0
 lfv_16	cmpi.w	#X_EXIT, _TL(a2,d4.w)
 	bne.s	lfv_18
@@ -168,6 +183,7 @@ lfv_18	move.w	       d0,   _X(a6)
 
 com_29	cmpi.w	#F_B212, _TL(a2,d4.w)
 	bne.s	lfx_1
+	;#F_B212 (swamp/forest ground) die
 	clr.w		 health(a5)
 	move.w	     d4,	d5
 	jsr	  2/tl_dispatch(pc)
@@ -176,15 +192,16 @@ com_29	cmpi.w	#F_B212, _TL(a2,d4.w)
 
 lfx_1	cmpi.w	#X_SFHS, _TL(a2,d4.w)
 	bne.s	lfx_4
+	;#X_SFHS: fall thru to <DUNJ>
 	cmpi.w	#-200, _V0(a6)
 	beq.s	lfx_3
 lfx_2	move.w	#SFHS, _ST(a6)
 	move.w	#4, _V0(a6)
 	jmp	com_34
-
+	;already dead, respawn
 lfx_3	jsr	    2/lose_life(pc)
 	tst.w		  lives(a5)
-	blt	  .endland
+gamover	blt	  .endland
 	sf.b		 new_rm(a5)
 	bra	lfx_2
 
@@ -198,7 +215,7 @@ lfx_4	move.w	    _V0(a6),	d7
 	bgt.s	  .lethal
 	;DIZZY
 	move.w	 #DIZZY,    _ST(a6)
-	lea	2/data64,	a3 ;:00d2
+	lea	2/dfall_ani,	a3
 	move.l	     a3,  _VANI(a6)
 	subi.w	  #$f00, health(a5)
 	jmp	     2/st_dizzy(pc)
@@ -209,17 +226,17 @@ lfx_4	move.w	    _V0(a6),	d7
 ;:1ebc				2/com_30()
 ;(#LANDJMP) [non/]lethal fall
 
-
+	;'eee!'/death rattle (#6)
 lethal	push		d0
-	move.w		#6,	d0
+	move.w	#SND_PLUMMET,	d0
 	jsr	     1/play_snd(a5)
 	pop			d0
-	lea	2/data77,	a3 ;:055e
+	lea	2/fdie_ani,	a3
 	clr.w		 health(a5)
 	jmp	proc113
-
+	;'whoa!'/falling sound (#4)
 fallok	push		d0
-	move.w		#4,	d0
+	move.w	 #SND_FALL,	d0
 	jsr	     1/play_snd(a5)
 	pop			d0
 	move.w		d4,	d5
@@ -239,13 +256,14 @@ com_31	move.w	       d4, _TLP(a6)
 	movea.l	 _SPRV(a6),	a4
 	tst.w		    _V2(a6)
 	bne.s	lfy_1
-	;#123/SPR_
+	;{0}: #123/SPR_ <. >
 	movea.l	  23*4(a4),	a1
 	bra.s	lfy_2
+	;{2}: #198/SPR_ <. >??
 lfy_1	move.w	   _FR(a6),	d2
-	;#198??
 	movea.l	   _V3(a6),	a1
 lfy_2	jsr	     3/blit_spr(a5)
+
 	cmpi.w	     #-200, _V0(a6)
 	beq.s	  .endland
 	jmp	  2/dg_dispatch(pc)
