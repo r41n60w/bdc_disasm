@@ -9,9 +9,9 @@
 
 cb_rathole:
 	;reached max # mice?
-	tst.w		     22(a6)
+	tst.w		  _NRAT(a6)
 	ble	  .endrath
-	subq.w		#1,  38(a6)
+	subq.w	      #1, _RATC(a6)
 	bgt	  .endrath
 
 	;spawn new rat	D7/(random)
@@ -19,17 +19,16 @@ mkmouse	jsr	       3/random(pc)
 	move.w		d0,	d7
 	moveq	       #54,	d0
 	_NewPtr		  ,  CLEAR
-	lea	3/cb_mouse,	a1
+	lea	  3/cb_rat,	a1
 	move.l		a1, _CB(a0)
-	;#21[34]/SPR_[LR]RAT<.4> 32x12px
 	move.w	_LRAT(a6), 8+_LRAT(a0)
 	move.w	_RRAT(a6), 8+_RRAT(a0)
 	;start pos, @ hole
 	move.w	_HOLX(a6), 8+_RATX(a0)
 	move.w	_HOLY(a6), 8+_RATY(a0)
-
-	clr.w		   8+20(a0)
-	clr.w		   8+44(a0)
+	clr.w		  8+_RATFR(a0)
+	clr.w		  8+_ROFFC(a0)
+	;#21[34]/SPR_[LR]RAT<.4> 32x12px
 	move.l	_LSPR(a6), 8+_LSPR(a0)
 	move.l	_RSPR(a6), 8+_RSPR(a0)
 	move.w	      d7,	d6
@@ -39,12 +38,12 @@ mkmouse	jsr	       3/random(pc)
 	;(rathole_t *) this
 	move.l	      a6,  8+22(a0)
 
-	move.w	     26(a6), 8+26(a0)
+	move.w	_RATST(a6), 8+_RATST(a0)
 	beq.s	0x1d42
 	;states [#1-#4]
 	move.w	   28(a6), 8+28(a0)
 	move.w	   30(a6), 8+30(a0)
-	move.w _RATDX(a6),  8+8(a0)
+	move.w _RATDX(a6),  8+_RATDX(a0)
 	;D7/(random): 1/3 chance
 lpole	cmpi.w	    #$5555,	d7
 	bhi.s	  .midpole
@@ -58,7 +57,7 @@ rpole	move.w	     36(a6), 40(a0)
 	bra.s	0x1d48
 
 ;:1d42	state [#0]	-> [RIGHT]
-	move.w	       #+2,  16(a0)
+	move.w	  #+2, 8+_RATDX(a0)
 
 ;:1d48
 	move.l	qobj(a5), _NEXT(a0)
@@ -84,7 +83,7 @@ endrath	rts
 ;@<[WE]LAB> mousehole obj func
 ;  arg A6(rathole_t *):  obj
 
-cb_mzrathole:
+cb_ratholmz:
 	;reached
 	tst.w		     22(a6)
 	ble	  .endmzrt
