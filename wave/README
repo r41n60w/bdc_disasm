@@ -1,0 +1,29 @@
+All BDC sounds, ripped directly from "BDC Data A|B"
+I wrote a basic unpacker for the compressed format used
+by the game -> [/tools/pcm4.c]
+This outputs raw PCM, mono, unsigned 8-bit, sample rate 11 kHz.
+Then passed to SoX to add WAVE headers.
+
+There are 100 sound IDs (#0 thru #99), but a few
+are undefined.
+Undefined IDs:
+      #31, #33, #36, #39
+      #40, #41, #45, #46
+      #88, #89, #95, #98
+
+Note that the game designates sounds #95 thru #99
+as "looping", ie continuous.  Only #96, #97 and
+#99 are defined (B212LP, X212LP and YNRLP)
+
+All others are one-shot.
+
+Names ending in "A" are stored in "BDC Data A",
+instead of the default "BDC Data B". eg (KEYSA)
+Related sounds are numbered eg. (ORB1, ORB2)
+Names ending in "X" are enemy death cries (RATX)
+
+Enjoy!
+
+
+r41n60w,.6 Aug 2021
+<github.com/r41n60w/bdc_disasm>
