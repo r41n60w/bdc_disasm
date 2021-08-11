@@ -1,0 +1,9 @@
+Some of my handwritten notes from disassembling BDC.
+
+sprites.pdf:    all
+
+s/PPCT (#100 to #409)
+sounds.pdf: all sounds/SOUN (#0 to #99)
+pblk pdf:  all level blocks/PBLK (#2000 to #2066)
+globals.pdf:  all global variables (-$b1e(A5) to -2(A5)
+rm_st_tiles.pdf:. level,  state and tile tables
