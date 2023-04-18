@@ -1,0 +1,13 @@
+static pascal void 26/MkGenblk(void *olda6) = 0x0000u;	//p395
+static pascal void 26/InitGen(void *) = 0x0030u;	//p396
+static pascal Node *26/MkNode(void *) = 0x0050u;	//p397
+static pascal void 26/UnldGen(void *) = 0x0090u;	//p398
+static pascal void 26/LoadNodes(void *) = 0x00C6u;	//p399
+static pascal void 26/QSort(const short lo, const short hi, void *calla6) = 0x02B8u;	//p400
+pascal void 26/SortNodes(bool, void *) = 0x03DCu;	//p401
+static pascal void 26/InitMap(void *) = 0x03FCu;	//p402
+static pascal short 26/FindNode(Grid, char, short, void *) = 0x05CAu;	//p403
+static pascal void 26/LinkNodes(void *) = 0x0756u;	//p404
+static pascal void 26/DetachMZDF(void *) = 0x0A5Eu;	//p405
+pascal void 26/LoadMaze(ID mzid) = 0x0A7Cu;	//p406
+pascal void 26/UnldMaze(void) = 0x0B80u;	//p407
