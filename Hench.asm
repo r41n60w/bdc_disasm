@@ -1,4 +1,4 @@
-; vi: syntax=asm68k
+; vi: syntax=asm68k ts=8 sw=8
 
 ;struct Hench	{
 HH_X	equ	   +0	   ;(px_t).W
